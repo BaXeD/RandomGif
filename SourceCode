@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GIF Generator</title>
+</head>
+<body>
+<h1>Random GIF</h1>
+<strong><p>Wait 5 sec for a new meme,<br> OR refresh!
+</p></strong>
+</body>
+<center>
+<script>
+
+function random_imglink(){
+var slideimage=new Array()
+
+slideimage[1]="https://goo.gl/EtiB5w"
+slideimage[2]="https://goo.gl/Eykd3L"
+slideimage[3]="https://goo.gl/MXRgcH"
+slideimage[4]="https://goo.gl/BzErQd"
+slideimage[5]="https://goo.gl/SULmKA"
+slideimage[6]="https://goo.gl/ehz6qK"
+slideimage[7]="https://goo.gl/8EmSrI"
+
+var slidelink=new Array()
+slidelink[1]=""
+slidelink[2]="http://www.PandaNetworks.com"
+slidelink[3]="http://www.PandaNetworks.com"
+slidelink[4]="http://www.PandaNetworks.com"
+slidelink[5]="http://www.PandaNetworks.com"
+slidelink[6]="http://www.PandaNetworks.com"
+slidelink[7]="http://www.PandaNetworks.com"
+
+var ry=Math.floor(Math.random()*slideimage.length)
+if (ry==0)
+ry=1
+document.write('<a href='+'"'+slidelink[ry]+'"'+'><img src="'+slideimage[ry]+'" border=0></a>')
+}
+random_imglink()
+
+</script>
+</center>
+<style>
+h1 {
+ text-align: center;
+ font-family: Comic Sans MS", cursive, sans-serif;
+}
+
+p {
+  text-align: center;
+  font-family: Comic Sans MS", cursive, sans-serif;
+  font-size: 10%;
+}
+html {
+  background: -webkit-linear-gradient(left ,red,orange,yellow,green,blue,indigo,violet);
+  background: -o-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+  background: -moz-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+  background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+}
+</style>
+<meta http-equiv="refresh" content="10">
+</html>
